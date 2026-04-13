@@ -25,7 +25,7 @@ You can test the API by sending a POST request to the `/predict` endpoint.
 
 ### 🚀 Example Input
 To test the API manually via the Swagger UI or Postman, use the following JSON structure:
-'''json
+```json
 {
   "CreditScore": 600,
   "Age": 40,
@@ -39,7 +39,7 @@ To test the API manually via the Swagger UI or Postman, use the following JSON s
   "Geography_Spain": 0,
   "Gender_Male": 1
 }
-
+```
 👥 Team Members
 Anuradha Paswan - GitHub Profile
 Shubham Chakma - GitHub Profile
