@@ -40,6 +40,21 @@ To test the API manually via the Swagger UI or Postman, use the following JSON s
   "Gender_Male": 1
 }
 ```
+
+## 🚀 MLOps Features
+
+This project implements an end-to-end MLOps pipeline:
+
+- FastAPI-based ML inference API
+- Docker containerization
+- MLflow experiment tracking
+- CI/CD using GitHub Actions
+- Deployment using Render
+
+## 📦 Project Structure
+
+Explain your folders here
+
 👥 Team Members
 
 Anuradha Paswan -https://github.com/anuradhapaswan1
