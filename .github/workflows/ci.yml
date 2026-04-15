@@ -9,15 +9,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.12
+        python-version: '3.10'
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
 
-    - name: Test import
-      run: python -c "from app.main import app"
+    - name: Test app import
+      run: |
+        python -c "import app.main"
+
+    - name: Check model files
+      run: |
+        ls app/model
